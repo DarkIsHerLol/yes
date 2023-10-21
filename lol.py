@@ -18,4 +18,4 @@ async def hello(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
-bot.run("MTE2NTI1NTc5NzA2NDg3MjAwNg.GmCj5a._M6Vp5e3PzQg_Ote__cMqQphHG3QdAN4jYtiUw")
+bot.run("")
