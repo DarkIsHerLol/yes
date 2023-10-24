@@ -4,7 +4,7 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='$', intents=intents)
+bot = commands.Bot(command_prefix='^', intents=intents)
 
 @bot.event
 async def on_ready():
@@ -17,5 +17,10 @@ async def hello(ctx):
 @bot.command()
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
+
+@bot.command()
+async def wow(ctx, count_heh = 5):
+    await ctx.send("wow" * count_heh)
+
 
 bot.run("")
